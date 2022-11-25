@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 24, 2022 at 9:48:04 PM EST" specVersion="11" urnVersion="1.27" nextGlobalID="305">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 24, 2022 at 10:18:22 PM EST" specVersion="15" urnVersion="1.27" nextGlobalID="355">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="ScenarioDef8" id="8"/>
@@ -22,111 +22,136 @@
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Registration" id="91" linksSrc="252" type="Task" refs="92">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Map" id="95" linksDest="244 245 304" linksSrc="243" type="Task" refs="96">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Notifications" id="109" linksSrc="249" type="Task" refs="110">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Metro" id="119" linksSrc="273" type="Task" refs="120">
+    <intElements xsi:type="fm:Feature" name="Metro" id="119" linksSrc="333" type="Task" refs="120">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Shopping" id="123" linksSrc="272" type="Task" refs="124">
+    <intElements xsi:type="fm:Feature" name="Shopping" id="123" linksSrc="343" type="Task" refs="124">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Recommendation" id="125" linksSrc="257" type="Task" refs="126">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Reward Points System" id="133" linksDest="270 272 273" linksSrc="248" type="Task" refs="134">
+    <intElements xsi:type="fm:Feature" name="Reward Points System" id="133" linksDest="332 340" linksSrc="248" type="Task" decompositionType="Or" refs="134">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Parking" id="139" linksSrc="268" type="Task" refs="140">
+    <intElements xsi:type="fm:Feature" name="Parking" id="139" linksSrc="316" type="Task" refs="140">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Store List" id="147" linksSrc="267" type="Task" refs="190">
+    <intElements xsi:type="fm:Feature" name="Store List" id="147" linksSrc="315" type="Task" refs="190">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Calendar" id="153" linksSrc="256" type="Task" refs="154">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Restaurant List" id="167" linksSrc="266" type="Task" refs="168">
+    <intElements xsi:type="fm:Feature" name="Restaurant List" id="167" linksSrc="314" type="Task" refs="168">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Information Center" id="177" linksDest="266 267 268" linksSrc="245" type="Task" refs="178">
+    <intElements xsi:type="fm:Feature" name="Information Center" id="177" linksDest="314 315 316" linksSrc="245" type="Task" refs="178">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Feature189" id="189" type="Task">
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Store Egg Hunt" id="203" linksSrc="270" type="Task" refs="204">
+    <intElements xsi:type="fm:Feature" name="Games" id="203" linksSrc="342" type="Task" refs="204">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="GPS Tracking" id="209" linksSrc="244" type="Task" refs="210">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Homepage" id="223" linksDest="256 257 291 292 293" linksSrc="254" type="Task" refs="224">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Sales" id="237" linksSrc="291" type="Task" refs="238">
       <metadata name="_addAggregate" value="disable"/>
       <metadata name="_numEval" value="100"/>
       <metadata name="_qualEval" value="Satisfied"/>
-      <metadata name="_autoSelected" value="20221122-235745571"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Events" id="278" linksSrc="292" type="Task" refs="279"/>
-    <intElements xsi:type="fm:Feature" name="News" id="280" linksSrc="293" type="Task" refs="281"/>
-    <intElements xsi:type="fm:Feature" name="Destination Navigation" id="298" linksSrc="304" type="Task" refs="299"/>
+    <intElements xsi:type="fm:Feature" name="Events" id="278" linksSrc="292" type="Task" refs="279">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="News" id="280" linksSrc="293" type="Task" refs="281">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Destination Navigation" id="298" linksSrc="304" type="Task" refs="299">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Commuting" id="326" linksDest="333" linksSrc="332" type="Task" refs="327">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221124-221818601"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="In-Store" id="336" linksDest="342 343" linksSrc="340" type="Task" decompositionType="Or" refs="337">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory243" id="243" refs="//@urndef/@specDiagrams.2/@connections.0" dest="15" src="95" quantitativeContribution="20"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory244" id="244" refs="//@urndef/@specDiagrams.2/@connections.1" dest="95" src="209" quantitativeContribution="50"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory245" id="245" refs="//@urndef/@specDiagrams.2/@connections.2" dest="95" src="177" quantitativeContribution="50"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory244" id="244" refs="//@urndef/@specDiagrams.2/@connections.1" dest="95" src="209" quantitativeContribution="33"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory245" id="245" refs="//@urndef/@specDiagrams.2/@connections.2" dest="95" src="177" quantitativeContribution="33"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory247" id="247" refs="//@urndef/@specDiagrams.2/@connections.3" dest="15" src="77" quantitativeContribution="20"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory248" id="248" refs="//@urndef/@specDiagrams.2/@connections.4" dest="15" src="133" quantitativeContribution="20"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory249" id="249" refs="//@urndef/@specDiagrams.2/@connections.5" dest="15" src="109" quantitativeContribution="20"/>
@@ -134,23 +159,51 @@
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory254" id="254" refs="//@urndef/@specDiagrams.2/@connections.7" dest="15" src="223" quantitativeContribution="20"/>
     <links xsi:type="fm:OptionalFMLink" name="Optional256" id="256" refs="//@urndef/@specDiagrams.2/@connections.8" dest="223" src="153" quantitativeContribution="0"/>
     <links xsi:type="fm:OptionalFMLink" name="Optional257" id="257" refs="//@urndef/@specDiagrams.2/@connections.9" dest="223" src="125" quantitativeContribution="0"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory266" id="266" refs="//@urndef/@specDiagrams.2/@connections.10" dest="177" src="167" quantitativeContribution="33"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory267" id="267" refs="//@urndef/@specDiagrams.2/@connections.11" dest="177" src="147" quantitativeContribution="33"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory268" id="268" refs="//@urndef/@specDiagrams.2/@connections.12" dest="177" src="139" quantitativeContribution="34"/>
-    <links xsi:type="fm:OptionalFMLink" name="Optional270" id="270" refs="//@urndef/@specDiagrams.2/@connections.13" dest="133" src="203" quantitativeContribution="0"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory272" id="272" refs="//@urndef/@specDiagrams.2/@connections.14" dest="133" src="123" quantitativeContribution="50"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory273" id="273" refs="//@urndef/@specDiagrams.2/@connections.15" dest="133" src="119" quantitativeContribution="50"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory291" id="291" refs="//@urndef/@specDiagrams.2/@connections.16" dest="223" src="237"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory292" id="292" refs="//@urndef/@specDiagrams.2/@connections.17" dest="223" src="278"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory293" id="293" refs="//@urndef/@specDiagrams.2/@connections.18" dest="223" src="280"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory304" id="304" refs="//@urndef/@specDiagrams.2/@connections.19" dest="95" src="298"/>
-    <groups name="Eaton Center App" id="5" strategies="6 276"/>
-    <strategies name="Parking" id="6" author="Dan Hosi" group="5">
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="139">
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory291" id="291" refs="//@urndef/@specDiagrams.2/@connections.10" dest="223" src="237" quantitativeContribution="33"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory292" id="292" refs="//@urndef/@specDiagrams.2/@connections.11" dest="223" src="278" quantitativeContribution="33"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory293" id="293" refs="//@urndef/@specDiagrams.2/@connections.12" dest="223" src="280" quantitativeContribution="34"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory304" id="304" refs="//@urndef/@specDiagrams.2/@connections.13" dest="95" src="298" quantitativeContribution="34"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition314" id="314" refs="//@urndef/@specDiagrams.2/@connections.14" dest="177" src="167"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition315" id="315" refs="//@urndef/@specDiagrams.2/@connections.15" dest="177" src="147"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition316" id="316" refs="//@urndef/@specDiagrams.2/@connections.16" dest="177" src="139"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory332" id="332" refs="//@urndef/@specDiagrams.2/@connections.17" dest="133" src="326" quantitativeContribution="100"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory333" id="333" refs="//@urndef/@specDiagrams.2/@connections.18" dest="326" src="119" quantitativeContribution="100"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional340" id="340" refs="//@urndef/@specDiagrams.2/@connections.19" dest="133" src="336" quantitativeContribution="0"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition342" id="342" refs="//@urndef/@specDiagrams.2/@connections.20" dest="336" src="203"/>
+    <links xsi:type="grl:Decomposition" name="Decomposition343" id="343" refs="//@urndef/@specDiagrams.2/@connections.21" dest="336" src="123"/>
+    <groups name="Eaton Center App" id="5" strategies="319 345 346 347 348 355"/>
+    <strategies name="Games, Shopping Rewards" id="319" author="Dan Hosi" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="203">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="123">
         <kpiEvalValueSet/>
       </evaluations>
     </strategies>
-    <strategies name="Calendar" id="276" author="Dan Hosi" group="5">
+    <strategies name="Games" id="345" author="Dan Hosi" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="203">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="Calendar, Games" id="346" author="Dan Hosi" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="153">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="203">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="Recommendation" id="347" author="Dan Hosi" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="125">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="Shopping" id="348" author="Dan Hosi" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="123">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="Calendar" id="355" author="Dan Hosi" group="5">
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="153">
         <kpiEvalValueSet/>
       </evaluations>
@@ -178,31 +231,31 @@
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="95"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef96" id="96" x="715" y="138" succ="//@urndef/@specDiagrams.2/@connections.0" pred="//@urndef/@specDiagrams.2/@connections.1 //@urndef/@specDiagrams.2/@connections.2 //@urndef/@specDiagrams.2/@connections.19" def="95">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef96" id="96" x="745" y="256" succ="//@urndef/@specDiagrams.2/@connections.0" pred="//@urndef/@specDiagrams.2/@connections.1 //@urndef/@specDiagrams.2/@connections.2 //@urndef/@specDiagrams.2/@connections.13" def="95">
         <metadata name="_height" value="40"/>
         <metadata name="_width" value="67"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef110" id="110" x="1271" y="466" succ="//@urndef/@specDiagrams.2/@connections.5" def="109">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef110" id="110" x="1256" y="455" succ="//@urndef/@specDiagrams.2/@connections.5" def="109">
         <metadata name="_height" value="50"/>
         <metadata name="_width" value="101"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef120" id="120" x="1521" y="464" succ="//@urndef/@specDiagrams.2/@connections.15" def="119">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef120" id="120" x="1379" y="453" succ="//@urndef/@specDiagrams.2/@connections.18" def="119">
         <metadata name="_height" value="48"/>
         <metadata name="_width" value="67"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef124" id="124" x="1616" y="467" succ="//@urndef/@specDiagrams.2/@connections.14" def="123">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef124" id="124" x="1561" y="456" succ="//@urndef/@specDiagrams.2/@connections.21" def="123">
         <metadata name="_height" value="41"/>
         <metadata name="_width" value="92"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef126" id="126" x="605" y="466" succ="//@urndef/@specDiagrams.2/@connections.9" def="125">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef126" id="126" x="611" y="459" succ="//@urndef/@specDiagrams.2/@connections.9" def="125">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="126"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef134" id="134" x="1482" y="161" succ="//@urndef/@specDiagrams.2/@connections.4" pred="//@urndef/@specDiagrams.2/@connections.13 //@urndef/@specDiagrams.2/@connections.14 //@urndef/@specDiagrams.2/@connections.15" def="133">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef134" id="134" x="1482" y="161" succ="//@urndef/@specDiagrams.2/@connections.4" pred="//@urndef/@specDiagrams.2/@connections.17 //@urndef/@specDiagrams.2/@connections.19" def="133">
         <metadata name="_width" value="110"/>
         <metadata name="_height" value="74"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef140" id="140" x="1138" y="458" succ="//@urndef/@specDiagrams.2/@connections.12" def="139">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef140" id="140" x="1123" y="456" succ="//@urndef/@specDiagrams.2/@connections.16" def="139">
         <metadata name="_height" value="51"/>
         <metadata name="_width" value="84"/>
       </nodes>
@@ -210,43 +263,51 @@
         <metadata name="_height" value="44"/>
         <metadata name="_width" value="91"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef168" id="168" x="948" y="460" succ="//@urndef/@specDiagrams.2/@connections.10" def="167">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef168" id="168" x="951" y="456" succ="//@urndef/@specDiagrams.2/@connections.14" def="167">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="88"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef178" id="178" x="1007" y="324" succ="//@urndef/@specDiagrams.2/@connections.2" pred="//@urndef/@specDiagrams.2/@connections.10 //@urndef/@specDiagrams.2/@connections.11 //@urndef/@specDiagrams.2/@connections.12" def="177">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef178" id="178" x="986" y="335" succ="//@urndef/@specDiagrams.2/@connections.2" pred="//@urndef/@specDiagrams.2/@connections.14 //@urndef/@specDiagrams.2/@connections.15 //@urndef/@specDiagrams.2/@connections.16" def="177">
         <metadata name="_height" value="46"/>
         <metadata name="_width" value="93"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef190" id="190" x="1046" y="468" succ="//@urndef/@specDiagrams.2/@connections.11" def="147">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef190" id="190" x="1040" y="458" succ="//@urndef/@specDiagrams.2/@connections.15" def="147">
         <metadata name="_height" value="44"/>
         <metadata name="_width" value="72"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef204" id="204" x="1387" y="460" succ="//@urndef/@specDiagrams.2/@connections.13" def="203">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef204" id="204" x="1465" y="451" succ="//@urndef/@specDiagrams.2/@connections.20" def="203">
         <metadata name="_height" value="50"/>
         <metadata name="_width" value="91"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef210" id="210" x="856" y="455" succ="//@urndef/@specDiagrams.2/@connections.1" def="209">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef210" id="210" x="857" y="454" succ="//@urndef/@specDiagrams.2/@connections.1" def="209">
         <metadata name="_height" value="49"/>
         <metadata name="_width" value="80"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef224" id="224" x="383" y="231" succ="//@urndef/@specDiagrams.2/@connections.7" pred="//@urndef/@specDiagrams.2/@connections.8 //@urndef/@specDiagrams.2/@connections.9 //@urndef/@specDiagrams.2/@connections.16 //@urndef/@specDiagrams.2/@connections.17 //@urndef/@specDiagrams.2/@connections.18" def="223">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef224" id="224" x="383" y="231" succ="//@urndef/@specDiagrams.2/@connections.7" pred="//@urndef/@specDiagrams.2/@connections.8 //@urndef/@specDiagrams.2/@connections.9 //@urndef/@specDiagrams.2/@connections.10 //@urndef/@specDiagrams.2/@connections.11 //@urndef/@specDiagrams.2/@connections.12" def="223">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef238" id="238" x="262" y="461" succ="//@urndef/@specDiagrams.2/@connections.16" def="237">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef238" id="238" x="262" y="461" succ="//@urndef/@specDiagrams.2/@connections.10" def="237">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef279" id="279" x="387" y="464" succ="//@urndef/@specDiagrams.2/@connections.17" def="278">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef279" id="279" x="380" y="458" succ="//@urndef/@specDiagrams.2/@connections.11" def="278">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef281" id="281" x="501" y="467" succ="//@urndef/@specDiagrams.2/@connections.18" def="280">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef281" id="281" x="500" y="459" succ="//@urndef/@specDiagrams.2/@connections.12" def="280">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef299" id="299" x="743" y="456" succ="//@urndef/@specDiagrams.2/@connections.19" def="298">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef299" id="299" x="746" y="456" succ="//@urndef/@specDiagrams.2/@connections.13" def="298">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef327" id="327" x="1359" y="306" succ="//@urndef/@specDiagrams.2/@connections.17" pred="//@urndef/@specDiagrams.2/@connections.18" def="326">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef337" id="337" x="1502" y="305" succ="//@urndef/@specDiagrams.2/@connections.19" pred="//@urndef/@specDiagrams.2/@connections.20 //@urndef/@specDiagrams.2/@connections.21" def="336">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
@@ -280,24 +341,6 @@
       <connections xsi:type="grl:LinkRef" source="126" target="224" link="257">
         <label deltaX="30" deltaY="-30"/>
       </connections>
-      <connections xsi:type="grl:LinkRef" source="168" target="178" link="266">
-        <label deltaX="30" deltaY="-30"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="190" target="178" link="267">
-        <label deltaX="30" deltaY="-30"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="140" target="178" link="268">
-        <label deltaX="30" deltaY="-30"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="204" target="134" link="270">
-        <label deltaX="30" deltaY="-30"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="124" target="134" link="272">
-        <label deltaX="30" deltaY="-30"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="120" target="134" link="273">
-        <label deltaX="30" deltaY="-30"/>
-      </connections>
       <connections xsi:type="grl:LinkRef" source="238" target="224" link="291">
         <label deltaX="30" deltaY="-30"/>
       </connections>
@@ -310,6 +353,20 @@
       <connections xsi:type="grl:LinkRef" source="299" target="96" link="304">
         <label deltaX="30" deltaY="-30"/>
       </connections>
+      <connections xsi:type="grl:LinkRef" source="168" target="178" link="314"/>
+      <connections xsi:type="grl:LinkRef" source="190" target="178" link="315"/>
+      <connections xsi:type="grl:LinkRef" source="140" target="178" link="316"/>
+      <connections xsi:type="grl:LinkRef" source="327" target="134" link="332">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="120" target="327" link="333">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="337" target="134" link="340">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="204" target="337" link="342"/>
+      <connections xsi:type="grl:LinkRef" source="124" target="337" link="343"/>
     </specDiagrams>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
