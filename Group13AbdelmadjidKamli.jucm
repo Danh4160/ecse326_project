@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 4:39:55 PM EST" specVersion="32" urnVersion="1.27" nextGlobalID="2431">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 5:09:47 PM EST" specVersion="33" urnVersion="1.27" nextGlobalID="3235">
   <ucmspec>
     <scenarioGroups name="Event and News" id="7">
-      <scenarios name="ValidEventScenario" id="8">
+      <scenarios name="Valid Event Scenario" id="8">
         <initializations value="true" variable="2371"/>
         <initializations value="false" variable="2387"/>
+        <initializations value="true" variable="2591"/>
+        <initializations value="1" variable="3099"/>
+        <initializations value="true" variable="3229"/>
         <startPoints enabled="true" startPoint="1529"/>
       </scenarios>
       <scenarios name="Invalid Event Scenario" id="2413">
         <initializations value="false" variable="2371"/>
         <initializations value="true" variable="2387"/>
+        <initializations value="true" variable="2591"/>
+        <initializations value="1" variable="3099"/>
+        <initializations value="true" variable="3229"/>
         <startPoints enabled="true" startPoint="1529"/>
       </scenarios>
     </scenarioGroups>
     <variables name="EventFound" id="2371"/>
     <variables name="EventNotFound" id="2387"/>
+    <variables name="eventsExist" id="2591"/>
+    <variables name="pin" id="3099" type="integer"/>
+    <variables name="notifications" id="3229"/>
   </ucmspec>
   <grlspec>
     <intElements xsi:type="fm:Feature" name="Eaton Center App" id="15" linksDest="243 247 248 254 360" type="Task" refs="16"/>
@@ -191,6 +200,8 @@
     <responsibilities name="View news" id="2005" respRefs="2006"/>
     <responsibilities name="Filter News" id="2063" respRefs="2064"/>
     <responsibilities name="Search for a non existant event" id="2296" respRefs="2297"/>
+    <responsibilities name="unpin events" id="3119" respRefs="3120"/>
+    <responsibilities name="Refuses Notification" id="3219" respRefs="3220"/>
     <specDiagrams xsi:type="fm:FeatureDiagram" name="Feature Model" id="4">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef16" id="16" x="651" y="14" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.3 //@urndef/@specDiagrams.0/@connections.4 //@urndef/@specDiagrams.0/@connections.6 //@urndef/@specDiagrams.0/@connections.15" def="15">
         <metadata name="_width" value="142"/>
@@ -431,73 +442,98 @@
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Events and News" id="1511">
       <nodes xsi:type="ucm.map:StartPoint" name="Open the HomePage" id="1529" x="91" y="293" contRef="1515" succ="//@urndef/@specDiagrams.2/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
-        <metadata name="_hits" value="1"/>
         <label/>
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
       <nodes xsi:type="ucm.map:EndPoint" name="Open the Event Page" id="1531" x="993" y="289" contRef="1647" pred="//@urndef/@specDiagrams.2/@connections.4">
-        <metadata name="_hits" value="1"/>
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef1808" id="1808" x="361" y="290" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.1" pred="//@urndef/@specDiagrams.2/@connections.6" respDef="1807">
-        <metadata name="_hits" value="1"/>
-        <label/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef1808" id="1808" x="372" y="302" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.1" pred="//@urndef/@specDiagrams.2/@connections.6" respDef="1807">
+        <label deltaX="4" deltaY="-2"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef1812" id="1812" x="434" y="289" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.2" pred="//@urndef/@specDiagrams.2/@connections.1" respDef="1811">
-        <metadata name="_hits" value="1"/>
-        <label/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef1812" id="1812" x="452" y="300" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.2" pred="//@urndef/@specDiagrams.2/@connections.13" respDef="1811">
+        <label deltaX="6" deltaY="-38"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef1893" id="1893" x="537" y="290" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.3" pred="//@urndef/@specDiagrams.2/@connections.2" respDef="1892">
-        <metadata name="_hits" value="1"/>
-        <label/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef1893" id="1893" x="574" y="298" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.3" pred="//@urndef/@specDiagrams.2/@connections.19" respDef="1892">
+        <label deltaX="4"/>
       </nodes>
       <nodes xsi:type="ucm.map:RespRef" name="RespRef2006" id="2006" x="868" y="288" contRef="1647" succ="//@urndef/@specDiagrams.2/@connections.4" pred="//@urndef/@specDiagrams.2/@connections.5" respDef="2005">
-        <metadata name="_hits" value="1"/>
         <label/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef2064" id="2064" x="765" y="290" contRef="1647" succ="//@urndef/@specDiagrams.2/@connections.5" pred="//@urndef/@specDiagrams.2/@connections.3" respDef="2063">
-        <metadata name="_hits" value="1"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef2064" id="2064" x="765" y="290" contRef="1647" succ="//@urndef/@specDiagrams.2/@connections.5" pred="//@urndef/@specDiagrams.2/@connections.11" respDef="2063">
         <label/>
       </nodes>
-      <nodes xsi:type="ucm.map:OrFork" name="OrFork2154" id="2154" x="320" y="289" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.6 //@urndef/@specDiagrams.2/@connections.7" pred="//@urndef/@specDiagrams.2/@connections.0">
-        <metadata name="_hits" value="1"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2172" id="2172" x="320" y="331" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.8" pred="//@urndef/@specDiagrams.2/@connections.7">
-        <metadata name="_hits" value="0"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="No event Found" id="2173" x="500" y="341" contRef="1594" pred="//@urndef/@specDiagrams.2/@connections.9">
-        <metadata name="_hits" value="0"/>
-        <label/>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork2154" id="2154" x="327" y="300" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.6 //@urndef/@specDiagrams.2/@connections.7" pred="//@urndef/@specDiagrams.2/@connections.9"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="No event Found" id="2173" x="526" y="385" contRef="1594" pred="//@urndef/@specDiagrams.2/@connections.8">
+        <label deltaX="-51" deltaY="-18"/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef2297" id="2297" x="351" y="336" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.9" pred="//@urndef/@specDiagrams.2/@connections.8" respDef="2296">
-        <metadata name="_hits" value="0"/>
-        <label/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef2297" id="2297" x="361" y="377" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.8" pred="//@urndef/@specDiagrams.2/@connections.7" respDef="2296">
+        <label deltaX="2" deltaY="-38"/>
       </nodes>
-      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1515" id="1515" x="38" y="75" width="1253" height="503" contDef="1514" nodes="1529" children="1594 1647">
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork2559" id="2559" x="271" y="298" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.9 //@urndef/@specDiagrams.2/@connections.10" pred="//@urndef/@specDiagrams.2/@connections.0"/>
+      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin2584" id="2584" x="652" y="290" contRef="1515" succ="//@urndef/@specDiagrams.2/@connections.11" pred="//@urndef/@specDiagrams.2/@connections.3 //@urndef/@specDiagrams.2/@connections.12 //@urndef/@specDiagrams.2/@connections.21"/>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2560" id="2560" x="470" y="167" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.12" pred="//@urndef/@specDiagrams.2/@connections.10"/>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork3066" id="3066" x="418" y="297" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.13 //@urndef/@specDiagrams.2/@connections.14 //@urndef/@specDiagrams.2/@connections.17" pred="//@urndef/@specDiagrams.2/@connections.1"/>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint3067" id="3067" x="458" y="247" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.15" pred="//@urndef/@specDiagrams.2/@connections.14"/>
+      <nodes xsi:type="ucm.map:OrJoin" name="OrJoin3092" id="3092" x="487" y="305" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.16" pred="//@urndef/@specDiagrams.2/@connections.2 //@urndef/@specDiagrams.2/@connections.15 //@urndef/@specDiagrams.2/@connections.18"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef3120" id="3120" x="463" y="205" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.18" pred="//@urndef/@specDiagrams.2/@connections.17" respDef="3119">
+        <label deltaX="1" deltaY="-5"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork3140" id="3140" x="516" y="302" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.19 //@urndef/@specDiagrams.2/@connections.20" pred="//@urndef/@specDiagrams.2/@connections.16"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef3220" id="3220" x="577" y="333" contRef="1594" succ="//@urndef/@specDiagrams.2/@connections.21" pred="//@urndef/@specDiagrams.2/@connections.20" respDef="3219">
+        <label deltaX="-4" deltaY="-34"/>
+      </nodes>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1515" id="1515" x="38" y="75" width="1253" height="503" contDef="1514" nodes="1529 2584" children="1594 1647">
         <label/>
       </contRefs>
-      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1594" id="1594" x="248" y="191" width="377" height="188" contDef="1593" nodes="1808 1812 1893 2154 2172 2173 2297" parent="1515">
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1594" id="1594" x="248" y="141" width="417" height="308" contDef="1593" nodes="1808 1812 1893 2154 2173 2297 2559 2560 3066 3067 3092 3120 3140 3220" parent="1515">
         <label/>
       </contRefs>
       <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1647" id="1647" x="727" y="190" width="335" height="191" contDef="1646" nodes="1531 2006 2064" parent="1515">
         <label/>
       </contRefs>
-      <connections xsi:type="ucm.map:NodeConnection" source="1529" target="2154"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="1808" target="1812"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="1812" target="1893"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="1893" target="2064"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="1529" target="2559"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="1808" target="3066"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="1812" target="3092"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="1893" target="2584"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2006" target="1531"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2064" target="2006"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2154" target="1808">
         <condition label="" expression="EventFound" description=""/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2154" target="2172">
+      <connections xsi:type="ucm.map:NodeConnection" source="2154" target="2297">
         <condition label="" expression="EventNotFound" description=""/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2172" target="2297"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2297" target="2173"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="2559" target="2154">
+        <condition deltaX="56" deltaY="-15" label="Events planned" expression="eventsExist" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="2559" target="2560">
+        <condition deltaX="104" deltaY="28" label="No events planned" expression="!eventsExist" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="2584" target="2064"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="2560" target="2584"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3066" target="1812">
+        <condition label="" expression="pin == 1" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="3066" target="3067">
+        <condition deltaX="11" deltaY="-7" label="No pin" expression="pin == 0" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="3067" target="3092"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3092" target="3140"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3066" target="3120">
+        <condition deltaX="44" deltaY="20" label="Unpin" expression="pin == -1" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="3120" target="3092"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="3140" target="1893">
+        <condition label="" expression="notifications" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="3140" target="3220">
+        <condition label="" expression="!notifications" description=""/>
+      </connections>
+      <connections xsi:type="ucm.map:NodeConnection" source="3220" target="2584"/>
     </specDiagrams>
     <components name="Events and News" id="1514" contRefs="1515"/>
     <components name="Event" id="1593" contRefs="1594"/>
