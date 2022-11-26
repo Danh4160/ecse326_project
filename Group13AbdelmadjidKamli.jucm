@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 5:40:00 PM EST" specVersion="34" urnVersion="1.27" nextGlobalID="3235">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Abdelmadjid Kamli" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 6:44:16 PM EST" specVersion="36" urnVersion="1.27" nextGlobalID="3235">
   <ucmspec>
     <scenarioGroups name="Event and News" id="7">
       <scenarios name="Valid Event Scenario" id="8">
@@ -277,7 +277,7 @@
     <responsibilities name="Search for a non existant event" id="2296" respRefs="2297"/>
     <responsibilities name="unpin events" id="3119" respRefs="3120"/>
     <responsibilities name="Refuses Notification" id="3219" respRefs="3220"/>
-    <specDiagrams xsi:type="fm:FeatureDiagram" name="Feature Model" id="4">
+    <specDiagrams xsi:type="fm:FeatureDiagram" name="Eaton Center App" id="4">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef16" id="16" x="651" y="14" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.3 //@urndef/@specDiagrams.0/@connections.4 //@urndef/@specDiagrams.0/@connections.6 //@urndef/@specDiagrams.0/@connections.15" def="15">
         <metadata name="_width" value="142"/>
         <metadata name="_height" value="68"/>
@@ -514,6 +514,7 @@
       <connections xsi:type="grl:LinkRef" source="1506" target="1302" link="1507">
         <label deltaX="30" deltaY="-30"/>
       </connections>
+      <comments description="The light version is a verry bad for the event planner. Indeed, planning events is still costing him a lot of money without bringing new customers.&#xD;&#xA;The stardard version helps bringing a lot of new customers to the events and reperesents the best scenario for the event planner. " x="158" y="800" width="485" height="108" fillColor="255,255,200"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Events and News" id="1511">
       <nodes xsi:type="ucm.map:StartPoint" name="Open the HomePage" id="1529" x="91" y="293" contRef="1515" succ="//@urndef/@specDiagrams.2/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">

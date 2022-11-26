@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 1:52:13 PM EST" specVersion="23" urnVersion="1.27" nextGlobalID="1929">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Alexandru Bangala" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 6:21:18 PM EST" specVersion="27" urnVersion="1.27" nextGlobalID="3292">
   <ucmspec>
     <scenarioGroups name="Redeem Points for Metro Pass(es)" id="7">
       <scenarios name="Redeem 1 metro pass" id="8">
@@ -27,51 +27,51 @@
     <intElements xsi:type="fm:Feature" name="Feature65" id="65" type="Task"/>
     <intElements xsi:type="fm:Feature" name="Business Management" id="77" linksDest="252" linksSrc="247" type="Task" refs="78">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Registration" id="91" linksSrc="252" type="Task" refs="92">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Map" id="95" linksDest="244 245 304" linksSrc="243" type="Task" refs="96">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Notifications" id="109" linksSrc="360" type="Task" refs="110">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Metro" id="119" linksSrc="333" type="Task" refs="120">
+    <intElements xsi:type="fm:Feature" name="Metro" id="119" linksSrc="333 3287" type="Task" refs="120 3286">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Purchases" id="123" linksSrc="343" type="Task" refs="124">
+    <intElements xsi:type="fm:Feature" name="Purchases" id="123" linksSrc="343 2624 2987" type="Task" refs="124 2834" selectable="true">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Recommendation" id="125" linksSrc="361" type="Task" refs="126">
+    <intElements xsi:type="fm:Feature" name="Recommendation" id="125" linksSrc="361 2615" type="Task" refs="126 2297">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Points System" id="133" linksDest="332 340" linksSrc="248" type="Task" decompositionType="Or" refs="134">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Parking" id="139" linksSrc="371" type="Task" refs="140">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Store List" id="147" linksSrc="372" type="Task" refs="190">
+    <intElements xsi:type="fm:Feature" name="Store List" id="147" linksSrc="372 2617" type="Task" refs="190 2613">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Calendar" id="153" linksSrc="358" type="Task" refs="154">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Restaurant List" id="167" linksSrc="373" type="Task" refs="168">
+    <intElements xsi:type="fm:Feature" name="Restaurant List" id="167" linksSrc="373 2616" type="Task" refs="168 2461">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Information Center" id="177" linksDest="371 372 373" linksSrc="245" type="Task" refs="178">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Feature189" id="189" type="Task"/>
     <intElements xsi:type="fm:Feature" name="Games" id="203" linksSrc="342" type="Task" refs="204">
@@ -79,15 +79,15 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="GPS Tracking" id="209" linksSrc="244" type="Task" refs="210">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Homepage" id="223" linksDest="291 358 361 362 363" linksSrc="254" type="Task" refs="224">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Sales" id="237" linksSrc="291" type="Task" refs="238">
+    <intElements xsi:type="fm:Feature" name="Sales" id="237" linksSrc="291 2614 2623" type="Task" refs="238 2114">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Events" id="278" linksSrc="363" type="Task" refs="279">
       <metadata name="_addAggregate" value="disable"/>
@@ -97,15 +97,20 @@
     </intElements>
     <intElements xsi:type="fm:Feature" name="Destination Navigation" id="298" linksSrc="304" type="Task" refs="299">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Commuting" id="326" linksDest="333" linksSrc="332" type="Task" refs="327">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-111730134"/>
+      <metadata name="_autoSelected" value="20221126-180914447"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="In-Store" id="336" linksDest="342 343" linksSrc="340" type="Task" decompositionType="Or" refs="337">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
+    <intElements name="Plan mall visits" id="1931" linksDest="2614 2615 2616 2617" type="Goal" refs="1932"/>
+    <intElements name="Save money" id="2619" linksDest="2623 2624" type="Goal" refs="2620"/>
+    <intElements name="Get rewarded for shopping" id="2840" linksDest="2987" type="Goal" refs="2841"/>
+    <intElements name="Get rewarded for taking public transport" id="2846" linksDest="3287" type="Goal" refs="2847"/>
+    <actors name="Customer" id="3289" contRefs="3290"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory243" id="243" refs="//@urndef/@specDiagrams.0/@connections.0" dest="15" src="95"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory244" id="244" refs="//@urndef/@specDiagrams.0/@connections.1" dest="95" src="209" quantitativeContribution="33"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory245" id="245" refs="//@urndef/@specDiagrams.0/@connections.2" dest="95" src="177" quantitativeContribution="33"/>
@@ -128,6 +133,14 @@
     <links xsi:type="fm:OptionalFMLink" name="Optional371" id="371" refs="//@urndef/@specDiagrams.0/@connections.19" dest="177" src="139" quantitativeContribution="0"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory372" id="372" refs="//@urndef/@specDiagrams.0/@connections.20" dest="177" src="147" quantitativeContribution="50"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory373" id="373" refs="//@urndef/@specDiagrams.0/@connections.21" dest="177" src="167" quantitativeContribution="50"/>
+    <links xsi:type="grl:Contribution" name="Contribution2614" id="2614" refs="//@urndef/@specDiagrams.1/@connections.0" dest="1931" src="237" quantitativeContribution="20"/>
+    <links xsi:type="grl:Contribution" name="Contribution2615" id="2615" refs="//@urndef/@specDiagrams.1/@connections.1" dest="1931" src="125" quantitativeContribution="20"/>
+    <links xsi:type="grl:Contribution" name="Contribution2616" id="2616" refs="//@urndef/@specDiagrams.1/@connections.2" dest="1931" src="167" quantitativeContribution="30"/>
+    <links xsi:type="grl:Contribution" name="Contribution2617" id="2617" refs="//@urndef/@specDiagrams.1/@connections.3" dest="1931" src="147" quantitativeContribution="30"/>
+    <links xsi:type="grl:Contribution" name="Contribution2623" id="2623" refs="//@urndef/@specDiagrams.1/@connections.4" dest="2619" src="237" contribution="SomePositive" quantitativeContribution="75"/>
+    <links xsi:type="grl:Contribution" name="Contribution2624" id="2624" refs="//@urndef/@specDiagrams.1/@connections.5" dest="2619" src="123"/>
+    <links xsi:type="grl:Contribution" name="Contribution2987" id="2987" refs="//@urndef/@specDiagrams.1/@connections.6" dest="2840" src="123" contribution="Make" quantitativeContribution="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution3287" id="3287" refs="//@urndef/@specDiagrams.1/@connections.7" dest="2846" src="119" contribution="Make" quantitativeContribution="100"/>
     <groups name="Eaton Center App" id="5" strategies="357 369"/>
     <strategies name="lightVersion" id="357" author="Dan Hosi" group="5"/>
     <strategies name="standardVersion" id="369" author="Dan Hosi" group="5">
@@ -166,7 +179,7 @@
     <responsibilities name="points subtracted from User's account" id="433" respRefs="434 1441"/>
     <responsibilities name="selects to redeem multiple metro passes" id="1261" respRefs="1262"/>
     <responsibilities name="selects cancel button" id="1910" respRefs="1911"/>
-    <specDiagrams xsi:type="fm:FeatureDiagram" name="Feature Model" id="4">
+    <specDiagrams xsi:type="fm:FeatureDiagram" name="Eaton Center App" id="4">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef16" id="16" x="651" y="14" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.3 //@urndef/@specDiagrams.0/@connections.4 //@urndef/@specDiagrams.0/@connections.6 //@urndef/@specDiagrams.0/@connections.15" def="15">
         <metadata name="_width" value="142"/>
         <metadata name="_height" value="68"/>
@@ -322,76 +335,125 @@
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
+    <specDiagrams xsi:type="grl:GRLGraph" name="Customer" id="1930">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef1932" id="1932" x="1005" y="323" contRef="3290" pred="//@urndef/@specDiagrams.1/@connections.0 //@urndef/@specDiagrams.1/@connections.1 //@urndef/@specDiagrams.1/@connections.2 //@urndef/@specDiagrams.1/@connections.3" def="1931">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef2114" id="2114" x="765" y="514" contRef="3290" succ="//@urndef/@specDiagrams.1/@connections.0 //@urndef/@specDiagrams.1/@connections.4" def="237">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef2297" id="2297" x="922" y="508" contRef="3290" succ="//@urndef/@specDiagrams.1/@connections.1" def="125">
+        <metadata name="_height" value="58"/>
+        <metadata name="_width" value="130"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef2461" id="2461" x="1069" y="510" contRef="3290" succ="//@urndef/@specDiagrams.1/@connections.2" def="167">
+        <metadata name="_height" value="58"/>
+        <metadata name="_width" value="130"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef2613" id="2613" x="1221" y="520" contRef="3290" succ="//@urndef/@specDiagrams.1/@connections.3" def="147">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef2620" id="2620" x="574" y="327" contRef="3290" pred="//@urndef/@specDiagrams.1/@connections.4 //@urndef/@specDiagrams.1/@connections.5" def="2619">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef2834" id="2834" x="565" y="503" contRef="3290" succ="//@urndef/@specDiagrams.1/@connections.5 //@urndef/@specDiagrams.1/@connections.6" def="123">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef2841" id="2841" x="385" y="322" contRef="3290" pred="//@urndef/@specDiagrams.1/@connections.6" def="2840">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef2847" id="2847" x="1406" y="314" contRef="3290" pred="//@urndef/@specDiagrams.1/@connections.7" def="2846">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="185"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef3286" id="3286" x="1439" y="518" contRef="3290" succ="//@urndef/@specDiagrams.1/@connections.7" def="119">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef3290" id="3290" x="225" y="200" width="1595" height="472" contDef="3289" nodes="1932 2114 2297 2461 2613 2620 2834 2841 2847 3286">
+        <label/>
+      </contRefs>
+      <connections xsi:type="grl:LinkRef" source="2114" target="1932" link="2614">
+        <label deltaX="24" deltaY="-83"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="2297" target="1932" link="2615">
+        <label deltaX="29" deltaY="-103"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="2461" target="1932" link="2616">
+        <label deltaX="22" deltaY="-71"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="2613" target="1932" link="2617">
+        <label deltaX="-24" deltaY="-54"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="2114" target="2620" link="2623">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="2834" target="2620" link="2624">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="2834" target="2841" link="2987">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="3286" target="2847" link="3287">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <comments description="The Standard version is the best for the Customer as they will get rewarded for shopping at the mall, resulting in money saved by using the points. Recommendations will also help in choosing which stores to visit and ensuring that they get the best options" x="757" y="714" width="499" height="100" fillColor="255,255,200"/>
+    </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Redeem Points for Metro Pass(es)" id="380">
-      <nodes xsi:type="ucm.map:StartPoint" name="Enter Metro tab" id="404" x="124" y="389" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
-        <metadata name="_hits" value="1"/>
+      <nodes xsi:type="ucm.map:StartPoint" name="Enter Metro tab" id="404" x="124" y="389" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
         <label/>
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="Metro Pass Redeemed" id="406" x="1535" y="246" contRef="1926" pred="//@urndef/@specDiagrams.1/@connections.3" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@endPoints.0">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="Metro Pass Redeemed" id="406" x="1535" y="246" contRef="1926" pred="//@urndef/@specDiagrams.2/@connections.3" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@endPoints.0">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef424" id="424" x="352" y="453" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.0" respDef="423">
-        <metadata name="_hits" value="1"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef424" id="424" x="352" y="453" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.1" pred="//@urndef/@specDiagrams.2/@connections.0" respDef="423">
         <label deltaX="-19" deltaY="8"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef430" id="430" x="799" y="293" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.7" respDef="429">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef430" id="430" x="799" y="293" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.2" pred="//@urndef/@specDiagrams.2/@connections.7" respDef="429">
         <label/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef434" id="434" x="1360" y="262" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.10" respDef="433">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef434" id="434" x="1360" y="262" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.3" pred="//@urndef/@specDiagrams.2/@connections.10" respDef="433">
         <label/>
       </nodes>
-      <nodes xsi:type="ucm.map:OrFork" name="OrFork850" id="850" x="453" y="440" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.4 //@urndef/@specDiagrams.1/@connections.5" pred="//@urndef/@specDiagrams.1/@connections.1">
-        <metadata name="_hits" value="1"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="No Metro Pass(es) Redeemed" id="852" x="452" y="621" contRef="1926" pred="//@urndef/@specDiagrams.1/@connections.5">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork850" id="850" x="453" y="440" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.4 //@urndef/@specDiagrams.2/@connections.5" pred="//@urndef/@specDiagrams.2/@connections.1"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="No Metro Pass(es) Redeemed" id="852" x="452" y="621" contRef="1926" pred="//@urndef/@specDiagrams.2/@connections.5">
         <label deltaX="-1" deltaY="-36"/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:OrFork" name="OrFork1196" id="1196" x="724" y="319" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.7 //@urndef/@specDiagrams.1/@connections.6 //@urndef/@specDiagrams.1/@connections.14" pred="//@urndef/@specDiagrams.1/@connections.4">
-        <metadata name="_hits" value="1"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="Metro Passes Redeemed" id="1198" x="1549" y="429" contRef="1926" pred="//@urndef/@specDiagrams.1/@connections.9">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork1196" id="1196" x="724" y="319" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.7 //@urndef/@specDiagrams.2/@connections.6 //@urndef/@specDiagrams.2/@connections.14" pred="//@urndef/@specDiagrams.2/@connections.4"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="Metro Passes Redeemed" id="1198" x="1549" y="429" contRef="1926" pred="//@urndef/@specDiagrams.2/@connections.9">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef1262" id="1262" x="834" y="378" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.8" pred="//@urndef/@specDiagrams.1/@connections.6" respDef="1261">
-        <metadata name="_hits" value="1"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef1262" id="1262" x="834" y="378" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.8" pred="//@urndef/@specDiagrams.2/@connections.6" respDef="1261">
         <label deltaX="-82" deltaY="7"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef1441" id="1441" x="1352" y="414" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.9" pred="//@urndef/@specDiagrams.1/@connections.12" respDef="433">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef1441" id="1441" x="1352" y="414" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.9" pred="//@urndef/@specDiagrams.2/@connections.12" respDef="433">
         <label/>
       </nodes>
-      <nodes xsi:type="ucm.map:OrFork" name="OrFork1606" id="1606" x="998" y="290" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.10 //@urndef/@specDiagrams.1/@connections.11" pred="//@urndef/@specDiagrams.1/@connections.2">
-        <metadata name="_hits" value="0"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="No Metro Pass Redeemed" id="1608" x="1067" y="115" contRef="1926" pred="//@urndef/@specDiagrams.1/@connections.11">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork1606" id="1606" x="998" y="290" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.10 //@urndef/@specDiagrams.2/@connections.11" pred="//@urndef/@specDiagrams.2/@connections.2"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="No Metro Pass Redeemed" id="1608" x="1067" y="115" contRef="1926" pred="//@urndef/@specDiagrams.2/@connections.11">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:OrFork" name="OrFork1780" id="1780" x="1043" y="395" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.12 //@urndef/@specDiagrams.1/@connections.13" pred="//@urndef/@specDiagrams.1/@connections.8">
-        <metadata name="_hits" value="1"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="No Metro Passes Redeemed" id="1782" x="1156" y="566" contRef="1926" pred="//@urndef/@specDiagrams.1/@connections.13" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.1/@endPoints.0">
-        <metadata name="_hits" value="1"/>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork1780" id="1780" x="1043" y="395" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.12 //@urndef/@specDiagrams.2/@connections.13" pred="//@urndef/@specDiagrams.2/@connections.8"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="No Metro Passes Redeemed" id="1782" x="1156" y="566" contRef="1926" pred="//@urndef/@specDiagrams.2/@connections.13" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.1/@endPoints.0">
         <label deltaX="-7" deltaY="-44"/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="No Metro Pass(es) Redeemed" id="1857" x="739" y="566" contRef="1926" pred="//@urndef/@specDiagrams.1/@connections.15">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:EndPoint" name="No Metro Pass(es) Redeemed" id="1857" x="739" y="566" contRef="1926" pred="//@urndef/@specDiagrams.2/@connections.15">
         <label deltaX="-4" deltaY="-40"/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef1911" id="1911" x="731" y="447" contRef="1926" succ="//@urndef/@specDiagrams.1/@connections.15" pred="//@urndef/@specDiagrams.1/@connections.14" respDef="1910">
-        <metadata name="_hits" value="0"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef1911" id="1911" x="731" y="447" contRef="1926" succ="//@urndef/@specDiagrams.2/@connections.15" pred="//@urndef/@specDiagrams.2/@connections.14" respDef="1910">
         <label deltaX="-70" deltaY="-18"/>
       </nodes>
       <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1926" id="1926" x="63" y="66" width="1654" height="645" contDef="1925" nodes="404 406 424 430 434 850 852 1196 1198 1262 1441 1606 1608 1780 1782 1857 1911">
