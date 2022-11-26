@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 6:07:29 PM EST" specVersion="36" urnVersion="1.27" nextGlobalID="2320">
   <ucmspec>
-    <scenarioGroups name="ScenarioGroup7" id="7">
-      <scenarios name="Successful user locating on virtual map" id="8">
+    <scenarioGroups name="Locate User Virtual Map" id="7">
+      <scenarios name="Permissions granted to locate user" id="8">
+        <initializations value="true" variable="1894"/>
         <startPoints enabled="true" startPoint="608"/>
         <endPoints enabled="true" mandatory="true" endPoint="1031"/>
       </scenarios>
-      <scenarios name="Unsuccessful user locating on virtual map" id="1181">
+      <scenarios name="Permissions denied to locate user" id="1181">
+        <initializations value="false" variable="1894"/>
         <startPoints enabled="true" startPoint="608"/>
         <endPoints enabled="true" mandatory="true" endPoint="1667"/>
       </scenarios>
     </scenarioGroups>
+    <variables name="permissions_granted" id="1894"/>
   </ucmspec>
   <grlspec>
     <intElements xsi:type="fm:Feature" name="Eaton Center App" id="15" linksDest="243 247 248 254 360" type="Task" refs="16"/>
@@ -102,7 +105,10 @@
     </intElements>
     <intElements name="Maximize profit" id="396" linksDest="432" type="Goal" decompositionType="Or" refs="397"/>
     <intElements name="Task1863" id="1863" type="Task"/>
-    <actors name="Store Owner in Eaton Center" id="399" contRefs="400"/>
+    <actors name="Store Owner in Eaton Center" id="399" contRefs="400">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory243" id="243" refs="//@urndef/@specDiagrams.0/@connections.0" dest="15" src="95"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory244" id="244" refs="//@urndef/@specDiagrams.0/@connections.1" dest="95" src="209" quantitativeContribution="33"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory245" id="245" refs="//@urndef/@specDiagrams.0/@connections.2" dest="95" src="177" quantitativeContribution="33"/>
@@ -432,7 +438,7 @@
         <condition deltaY="15" label="allow permissions" expression="true"/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="1665" target="1694">
-        <condition deltaX="-4" deltaY="1" label="refuse permissions" expression="true"/>
+        <condition deltaX="-4" deltaY="1" label="refuse permissions" expression="!permissions_granted" description=""/>
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="1694" target="1667"/>
       <connections xsi:type="ucm.map:NodeConnection" source="1769" target="2051"/>
@@ -477,8 +483,8 @@
       <connections xsi:type="ucm.map:NodeConnection" source="2318" target="2311"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2319" target="1031"/>
     </specDiagrams>
-    <components name="Locate User on Virtual Map" id="588" contRefs="589" kind="Actor"/>
     <components name="eaton center app system" id="1420" contRefs="1421"/>
+    <components name="Locate User On Virtual Map" id="1880" contRefs="1881"/>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
   <dynamicContexts name="DynamicContext14" id="14" groups="13"/>
