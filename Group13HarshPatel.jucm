@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 5:21:41 PM EST" specVersion="23" urnVersion="1.27" nextGlobalID="2435">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 5:23:17 PM EST" specVersion="24" urnVersion="1.27" nextGlobalID="2435">
   <ucmspec>
     <scenarioGroups name="Sales" id="7">
       <scenarios name="InternetFailureForSales" id="8">
@@ -447,6 +447,7 @@
       <connections xsi:type="grl:LinkRef" source="1374" target="390" link="1867">
         <label deltaX="30" deltaY="-30"/>
       </connections>
+      <comments description="Standard mode is better because it has the extra features of Recommendation and Events which helps promote more the Eaton Centre than the light mode which does not contain the extra features for marketing and helping the promotion of the Eaton Center&#xD;&#xA;" x="604" y="673" width="474" height="93" fillColor="255,255,200"/>
     </specDiagrams>
     <components name="Homepage" id="2064" contRefs="2065"/>
     <components name="Fetch Database" id="2066" contRefs="2067"/>
