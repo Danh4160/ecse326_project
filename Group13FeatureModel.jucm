@@ -1,114 +1,151 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 4:44:08 PM EST" specVersion="35" urnVersion="1.27" nextGlobalID="1894">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Dan Hosi" created="November 22, 2022 at 9:24:15 PM EST" modified="November 25, 2022 at 11:45:14 AM EST" specVersion="20" urnVersion="1.27" nextGlobalID="379">
   <ucmspec>
-    <scenarioGroups name="Locate User Virtual Map" id="7">
-      <scenarios name="Permissions granted to locate user" id="8">
-        <initializations value="true" variable="1894"/>
-        <startPoints enabled="true" startPoint="608"/>
-        <endPoints enabled="true" mandatory="true" endPoint="1031"/>
-      </scenarios>
-      <scenarios name="Permissions denied to locate user" id="1181">
-        <initializations value="false" variable="1894"/>
-        <startPoints enabled="true" startPoint="608"/>
-        <endPoints enabled="true" mandatory="true" endPoint="1667"/>
-      </scenarios>
+    <scenarioGroups name="ScenarioGroup7" id="7">
+      <scenarios name="ScenarioDef8" id="8"/>
     </scenarioGroups>
-    <variables name="permissions_granted" id="1894"/>
   </ucmspec>
   <grlspec>
-    <intElements xsi:type="fm:Feature" name="Eaton Center App" id="15" linksDest="243 247 248 254 360" type="Task" refs="16"/>
-    <intElements xsi:type="fm:Feature" name="Feature63" id="63" type="Task"/>
-    <intElements xsi:type="fm:Feature" name="Feature65" id="65" type="Task"/>
+    <intElements xsi:type="fm:Feature" name="Eaton Center App" id="15" linksDest="243 247 248 254 360" type="Task" refs="16">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Feature63" id="63" type="Task">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Feature65" id="65" type="Task">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
     <intElements xsi:type="fm:Feature" name="Business Management" id="77" linksDest="252" linksSrc="247" type="Task" refs="78">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Registration" id="91" linksSrc="252" type="Task" refs="92">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Map" id="95" linksDest="244 245 304" linksSrc="243" type="Task" refs="96">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Notifications" id="109" linksSrc="360" type="Task" refs="110">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Metro" id="119" linksSrc="333" type="Task" refs="120">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Purchases" id="123" linksSrc="343" type="Task" refs="124">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Recommendation" id="125" linksSrc="361 1872" type="Task" refs="126 1871" selectable="true">
+    <intElements xsi:type="fm:Feature" name="Recommendation" id="125" linksSrc="361" type="Task" refs="126">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Points System" id="133" linksDest="332 340" linksSrc="248" type="Task" decompositionType="Or" refs="134">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Parking" id="139" linksSrc="371" type="Task" refs="140">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Store List" id="147" linksSrc="372" type="Task" refs="190">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Calendar" id="153" linksSrc="358" type="Task" refs="154">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Restaurant List" id="167" linksSrc="373" type="Task" refs="168">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Information Center" id="177" linksDest="371 372 373" linksSrc="245" type="Task" refs="178">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Feature189" id="189" type="Task"/>
+    <intElements xsi:type="fm:Feature" name="Feature189" id="189" type="Task">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
     <intElements xsi:type="fm:Feature" name="Games" id="203" linksSrc="342" type="Task" refs="204">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="GPS Tracking" id="209" linksSrc="244" type="Task" refs="210">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Homepage" id="223" linksDest="291 358 361 362 363" linksSrc="254" type="Task" refs="224">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Sales" id="237" linksSrc="291 431" type="Task" refs="238 429">
+    <intElements xsi:type="fm:Feature" name="Sales" id="237" linksSrc="291" type="Task" refs="238">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Events" id="278" linksSrc="363 1868" type="Task" refs="279 1867" selectable="true">
+    <intElements xsi:type="fm:Feature" name="Events" id="278" linksSrc="363" type="Task" refs="279">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="News" id="280" linksSrc="362" type="Task" refs="281">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements xsi:type="fm:Feature" name="Destination Navigation" id="298" linksSrc="304 1869" type="Task" refs="299 1864">
+    <intElements xsi:type="fm:Feature" name="Destination Navigation" id="298" linksSrc="304" type="Task" refs="299">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="Commuting" id="326" linksDest="333" linksSrc="332" type="Task" refs="327">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_autoSelected" value="20221125-125347317"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_autoSelected" value="20221125-111730134"/>
     </intElements>
     <intElements xsi:type="fm:Feature" name="In-Store" id="336" linksDest="342 343" linksSrc="340" type="Task" decompositionType="Or" refs="337">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements name="Bring customers" id="394" linksDest="431 1868 1869 1872" linksSrc="432" type="Goal" refs="395">
-      <metadata name="_addAggregate" value="disable"/>
-    </intElements>
-    <intElements name="Maximize profit" id="396" linksDest="432" type="Goal" decompositionType="Or" refs="397"/>
-    <intElements name="Task1863" id="1863" type="Task"/>
-    <actors name="Store Owner in Eaton Center" id="399" contRefs="400">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </actors>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory243" id="243" refs="//@urndef/@specDiagrams.0/@connections.0" dest="15" src="95"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory244" id="244" refs="//@urndef/@specDiagrams.0/@connections.1" dest="95" src="209" quantitativeContribution="33"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory245" id="245" refs="//@urndef/@specDiagrams.0/@connections.2" dest="95" src="177" quantitativeContribution="33"/>
@@ -131,11 +168,6 @@
     <links xsi:type="fm:OptionalFMLink" name="Optional371" id="371" refs="//@urndef/@specDiagrams.0/@connections.19" dest="177" src="139" quantitativeContribution="0"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory372" id="372" refs="//@urndef/@specDiagrams.0/@connections.20" dest="177" src="147" quantitativeContribution="50"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory373" id="373" refs="//@urndef/@specDiagrams.0/@connections.21" dest="177" src="167" quantitativeContribution="50"/>
-    <links xsi:type="grl:Contribution" name="Contribution431" id="431" refs="//@urndef/@specDiagrams.1/@connections.0" dest="394" src="237" contribution="SomePositive" quantitativeContribution="60"/>
-    <links xsi:type="grl:Contribution" name="Contribution432" id="432" refs="//@urndef/@specDiagrams.1/@connections.1" dest="396" src="394" contribution="Make" quantitativeContribution="100"/>
-    <links xsi:type="grl:Contribution" name="Contribution1868" id="1868" refs="//@urndef/@specDiagrams.1/@connections.2" dest="394" src="278" quantitativeContribution="20"/>
-    <links xsi:type="grl:Contribution" name="Contribution1869" id="1869" refs="//@urndef/@specDiagrams.1/@connections.3" dest="394" src="298" quantitativeContribution="5"/>
-    <links xsi:type="grl:Contribution" name="Contribution1872" id="1872" refs="//@urndef/@specDiagrams.1/@connections.4" dest="394" src="125" quantitativeContribution="15"/>
     <groups name="Eaton Center App" id="5" strategies="357 369"/>
     <strategies name="lightVersion" id="357" author="Dan Hosi" group="5"/>
     <strategies name="standardVersion" id="369" author="Dan Hosi" group="5">
@@ -169,8 +201,6 @@
     <featureModel/>
   </grlspec>
   <urndef>
-    <responsibilities name="requests location permissions" id="612" respRefs="613"/>
-    <responsibilities name="locates user" id="1347" respRefs="1348"/>
     <specDiagrams xsi:type="fm:FeatureDiagram" name="Feature Model" id="4">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef16" id="16" x="651" y="14" pred="//@urndef/@specDiagrams.0/@connections.0 //@urndef/@specDiagrams.0/@connections.3 //@urndef/@specDiagrams.0/@connections.4 //@urndef/@specDiagrams.0/@connections.6 //@urndef/@specDiagrams.0/@connections.15" def="15">
         <metadata name="_width" value="142"/>
@@ -327,103 +357,6 @@
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
-    <specDiagrams xsi:type="grl:GRLGraph" name="Store Owner in Eaton Center" id="380" description="The standard version is better for the head of the financial department store since they are more varaibles to take care of in his equations. He cannot omit any details in his calculations.">
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef395" id="395" x="435" y="242" contRef="400" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.0 //@urndef/@specDiagrams.1/@connections.2 //@urndef/@specDiagrams.1/@connections.3 //@urndef/@specDiagrams.1/@connections.4" def="394">
-        <metadata name="_height" value="64"/>
-        <metadata name="_width" value="169"/>
-      </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef397" id="397" x="454" y="110" contRef="400" pred="//@urndef/@specDiagrams.1/@connections.1" def="396">
-        <metadata name="_height" value="58"/>
-        <metadata name="_width" value="130"/>
-      </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef429" id="429" x="387" y="440" contRef="400" succ="//@urndef/@specDiagrams.1/@connections.0" def="237">
-        <metadata name="_height" value="46"/>
-        <metadata name="_width" value="110"/>
-      </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef1864" id="1864" x="294" y="350" contRef="400" succ="//@urndef/@specDiagrams.1/@connections.3" def="298">
-        <metadata name="_height" value="45"/>
-        <metadata name="_width" value="110"/>
-      </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef1867" id="1867" x="549" y="437" contRef="400" succ="//@urndef/@specDiagrams.1/@connections.2" def="278">
-        <metadata name="_height" value="45"/>
-        <metadata name="_width" value="110"/>
-      </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef1871" id="1871" x="623" y="346" contRef="400" succ="//@urndef/@specDiagrams.1/@connections.4" def="125">
-        <metadata name="_height" value="45"/>
-        <metadata name="_width" value="126"/>
-      </nodes>
-      <contRefs xsi:type="grl:ActorRef" name="ActorRef400" id="400" x="262" y="95" width="508" height="432" contDef="399" nodes="395 397 429 1864 1867 1871">
-        <label deltaX="46" deltaY="6"/>
-      </contRefs>
-      <connections xsi:type="grl:LinkRef" source="429" target="395" link="431">
-        <label deltaX="23" deltaY="-58"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="395" target="397" link="432">
-        <label deltaX="30" deltaY="-30"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="1867" target="395" link="1868">
-        <label deltaX="25" deltaY="-49"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="1864" target="395" link="1869">
-        <label deltaX="17" deltaY="-49"/>
-      </connections>
-      <connections xsi:type="grl:LinkRef" source="1871" target="395" link="1872">
-        <label deltaX="-19" deltaY="-47"/>
-      </connections>
-    </specDiagrams>
-    <specDiagrams xsi:type="ucm.map:UCMmap" name="Locate user on virtual map" id="553">
-      <nodes xsi:type="ucm.map:StartPoint" name="select map feature" id="608" x="271" y="252" succ="//@urndef/@specDiagrams.2/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
-        <metadata name="_hits" value="1"/>
-        <label deltaX="-5" deltaY="4"/>
-        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef613" id="613" x="418" y="249" contRef="1421" succ="//@urndef/@specDiagrams.2/@connections.1" pred="//@urndef/@specDiagrams.2/@connections.0" respDef="612">
-        <metadata name="_hits" value="1"/>
-        <label deltaX="-1" deltaY="-41"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="user displayed successfully on map" id="1031" x="790" y="383" pred="//@urndef/@specDiagrams.2/@connections.2" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@endPoints.0">
-        <metadata name="_hits" value="1"/>
-        <label/>
-        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef1348" id="1348" x="602" y="376" succ="//@urndef/@specDiagrams.2/@connections.2" pred="//@urndef/@specDiagrams.2/@connections.6" respDef="1347">
-        <metadata name="_hits" value="1"/>
-        <label deltaX="16" deltaY="-41"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:OrFork" name="OrFork1665" id="1665" x="527" y="257" succ="//@urndef/@specDiagrams.2/@connections.3 //@urndef/@specDiagrams.2/@connections.4" pred="//@urndef/@specDiagrams.2/@connections.1">
-        <metadata name="_hits" value="1"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="unable to display user" id="1667" x="640" y="199" pred="//@urndef/@specDiagrams.2/@connections.5" scenarioEndPoints="//@ucmspec/@scenarioGroups.0/@scenarios.1/@endPoints.0">
-        <metadata name="_hits" value="0"/>
-        <label/>
-        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow1694" id="1694" x="559" y="200" succ="//@urndef/@specDiagrams.2/@connections.5" pred="//@urndef/@specDiagrams.2/@connections.4">
-        <metadata name="_hits" value="0"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow1769" id="1769" x="557" y="312" succ="//@urndef/@specDiagrams.2/@connections.6" pred="//@urndef/@specDiagrams.2/@connections.3">
-        <metadata name="_hits" value="1"/>
-      </nodes>
-      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1421" id="1421" x="335" y="209" width="170" height="83" contDef="1420" nodes="613">
-        <label/>
-      </contRefs>
-      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1881" id="1881" x="162" y="100" width="818" height="376" contDef="1880">
-        <label/>
-      </contRefs>
-      <connections xsi:type="ucm.map:NodeConnection" source="608" target="613"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="613" target="1665"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="1348" target="1031"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="1665" target="1769">
-        <condition deltaX="-2" deltaY="11" label="allow permissions" expression="permissions_granted" description=""/>
-      </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="1665" target="1694">
-        <condition deltaX="-4" deltaY="1" label="refuse permissions" expression="!permissions_granted" description=""/>
-      </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="1694" target="1667"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="1769" target="1348"/>
-    </specDiagrams>
-    <components name="eaton center app system" id="1420" contRefs="1421"/>
-    <components name="Locate User On Virtual Map" id="1880" contRefs="1881"/>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
   <dynamicContexts name="DynamicContext14" id="14" groups="13"/>
