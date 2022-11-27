@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Sebastian Ionascu" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 6:21:47 PM EST" specVersion="30" urnVersion="1.27" nextGlobalID="1762">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Sebastian Ionascu" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 11:47:52 PM EST" specVersion="31" urnVersion="1.27" nextGlobalID="1762">
   <ucmspec>
     <scenarioGroups name="Registration" id="7">
       <scenarios name="Successful registration" id="8">
@@ -373,13 +373,13 @@
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
       <nodes xsi:type="ucm.map:RespRef" name="RespRef619" id="619" x="592" y="356" contRef="1354" succ="//@urndef/@specDiagrams.2/@connections.1" pred="//@urndef/@specDiagrams.2/@connections.2" respDef="618">
-        <label/>
+        <label deltaX="-63" deltaY="21"/>
       </nodes>
       <nodes xsi:type="ucm.map:RespRef" name="RespRef617" id="617" x="477" y="259" contRef="1354" succ="//@urndef/@specDiagrams.2/@connections.2" pred="//@urndef/@specDiagrams.2/@connections.3" respDef="616">
         <label/>
       </nodes>
       <nodes xsi:type="ucm.map:RespRef" name="RespRef613" id="613" x="362" y="341" contRef="1354" succ="//@urndef/@specDiagrams.2/@connections.3" pred="//@urndef/@specDiagrams.2/@connections.0" respDef="612">
-        <label/>
+        <label deltaX="10" deltaY="-42"/>
       </nodes>
       <nodes xsi:type="ucm.map:EndPoint" name="Account created successfully" id="1031" x="921" y="421" contRef="1354" pred="//@urndef/@specDiagrams.2/@connections.4">
         <label/>
@@ -391,7 +391,7 @@
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
       <nodes xsi:type="ucm.map:RespRef" name="RespRef1348" id="1348" x="666" y="451" contRef="1354" succ="//@urndef/@specDiagrams.2/@connections.6" pred="//@urndef/@specDiagrams.2/@connections.1" respDef="1347">
-        <label/>
+        <label deltaX="5" deltaY="-36"/>
       </nodes>
       <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef1354" id="1354" x="177" y="126" width="909" height="399" contDef="1353" nodes="608 619 617 613 1031 1336 1338 1348">
         <label/>

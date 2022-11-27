@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Harsh Patel" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 8:59:08 PM EST" specVersion="26" urnVersion="1.27" nextGlobalID="2537">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Harsh Patel" created="November 22, 2022 at 9:24:15 PM EST" modified="November 26, 2022 at 11:46:42 PM EST" specVersion="28" urnVersion="1.27" nextGlobalID="2537">
   <ucmspec>
     <scenarioGroups name="Sales" id="7">
       <scenarios name="InternetFailureForSales" id="8">
@@ -109,7 +109,10 @@
     <intElements name="Promote the Mall" id="389" linksDest="1864 1866 1867" linksSrc="394" type="Goal" refs="390">
       <metadata name="_addAggregate" value="disable"/>
     </intElements>
-    <actors name="Marketing Head of the Eaton Center" id="2432" contRefs="2433"/>
+    <actors name="Marketing Head of the Eaton Center" id="2432" contRefs="2433">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory243" id="243" refs="//@urndef/@specDiagrams.0/@connections.0" dest="15" src="95"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory244" id="244" refs="//@urndef/@specDiagrams.0/@connections.1" dest="95" src="209" quantitativeContribution="33"/>
     <links xsi:type="fm:MandatoryFMLink" name="Mandatory245" id="245" refs="//@urndef/@specDiagrams.0/@connections.2" dest="95" src="177" quantitativeContribution="33"/>
@@ -334,94 +337,92 @@
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Sales" id="2054">
       <nodes xsi:type="ucm.map:StartPoint" name="On Homepage" id="2055" x="192" y="292" succ="//@urndef/@specDiagrams.1/@connections.0" scenarioStartPoints="//@ucmspec/@scenarioGroups.0/@scenarios.0/@startPoints.0 //@ucmspec/@scenarioGroups.0/@scenarios.1/@startPoints.0">
+        <metadata name="_hits" value="1"/>
         <label/>
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2056" id="2056" x="292" y="292" contRef="2065" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.0"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="List of stores with sales displayed" id="2057" x="1140" y="289" pred="//@urndef/@specDiagrams.1/@connections.12">
+      <nodes xsi:type="ucm.map:EndPoint" name="List of stores with sales displayed" id="2057" x="1140" y="289" pred="//@urndef/@specDiagrams.1/@connections.7">
+        <metadata name="_hits" value="1"/>
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef2075" id="2075" x="330" y="294" contRef="2065" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.1" respDef="2074">
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef2075" id="2075" x="330" y="294" contRef="2065" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.0" respDef="2074">
+        <metadata name="_hits" value="1"/>
         <label/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef2077" id="2077" x="575" y="294" contRef="2067" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.2" respDef="2076">
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef2077" id="2077" x="575" y="294" contRef="2067" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.1" respDef="2076">
+        <metadata name="_hits" value="1"/>
         <label/>
       </nodes>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef2081" id="2081" x="864" y="289" contRef="2069" succ="//@urndef/@specDiagrams.1/@connections.4" pred="//@urndef/@specDiagrams.1/@connections.7" respDef="2080">
-        <label/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef2081" id="2081" x="864" y="289" contRef="2069" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.4" respDef="2080">
+        <metadata name="_hits" value="1"/>
+        <label deltaX="6" deltaY="-46"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2240" id="2240" x="609" y="293" contRef="2067" succ="//@urndef/@specDiagrams.1/@connections.5" pred="//@urndef/@specDiagrams.1/@connections.3"/>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2359" id="2359" x="663" y="291" succ="//@urndef/@specDiagrams.1/@connections.6" pred="//@urndef/@specDiagrams.1/@connections.5"/>
-      <nodes xsi:type="ucm.map:OrFork" name="OrFork2407" id="2407" x="696" y="290" succ="//@urndef/@specDiagrams.1/@connections.7 //@urndef/@specDiagrams.1/@connections.8 //@urndef/@specDiagrams.1/@connections.10" pred="//@urndef/@specDiagrams.1/@connections.6"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="Internet Failure" id="2409" x="745" y="151" pred="//@urndef/@specDiagrams.1/@connections.9">
-        <label/>
-        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork2407" id="2407" x="696" y="290" succ="//@urndef/@specDiagrams.1/@connections.4 //@urndef/@specDiagrams.1/@connections.5 //@urndef/@specDiagrams.1/@connections.6" pred="//@urndef/@specDiagrams.1/@connections.2">
+        <metadata name="_hits" value="1"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2408" id="2408" x="713" y="233" succ="//@urndef/@specDiagrams.1/@connections.9" pred="//@urndef/@specDiagrams.1/@connections.8"/>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2437" id="2437" x="746" y="350" succ="//@urndef/@specDiagrams.1/@connections.11" pred="//@urndef/@specDiagrams.1/@connections.10"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="Server Error" id="2438" x="746" y="414" pred="//@urndef/@specDiagrams.1/@connections.11">
+      <nodes xsi:type="ucm.map:EndPoint" name="Internet Failure" id="2409" x="745" y="151" pred="//@urndef/@specDiagrams.1/@connections.5">
+        <metadata name="_hits" value="0"/>
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:OrFork" name="OrFork2491" id="2491" x="892" y="291" contRef="2069" succ="//@urndef/@specDiagrams.1/@connections.12 //@urndef/@specDiagrams.1/@connections.13 //@urndef/@specDiagrams.1/@connections.15 //@urndef/@specDiagrams.1/@connections.17" pred="//@urndef/@specDiagrams.1/@connections.4"/>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2492" id="2492" x="942" y="261" succ="//@urndef/@specDiagrams.1/@connections.14" pred="//@urndef/@specDiagrams.1/@connections.13"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="No Sales Currently" id="2493" x="992" y="261" pred="//@urndef/@specDiagrams.1/@connections.14">
+      <nodes xsi:type="ucm.map:EndPoint" name="Server Error" id="2438" x="746" y="414" pred="//@urndef/@specDiagrams.1/@connections.6">
+        <metadata name="_hits" value="0"/>
+        <label deltaX="17" deltaY="-41"/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:OrFork" name="OrFork2491" id="2491" x="892" y="291" contRef="2069" succ="//@urndef/@specDiagrams.1/@connections.7 //@urndef/@specDiagrams.1/@connections.8 //@urndef/@specDiagrams.1/@connections.9 //@urndef/@specDiagrams.1/@connections.10" pred="//@urndef/@specDiagrams.1/@connections.3">
+        <metadata name="_hits" value="1"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="No Sales Currently" id="2493" x="992" y="261" pred="//@urndef/@specDiagrams.1/@connections.8">
+        <metadata name="_hits" value="0"/>
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2510" id="2510" x="942" y="351" succ="//@urndef/@specDiagrams.1/@connections.16" pred="//@urndef/@specDiagrams.1/@connections.15"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="Server Error" id="2511" x="992" y="351" pred="//@urndef/@specDiagrams.1/@connections.16">
+      <nodes xsi:type="ucm.map:EndPoint" name="Server Error" id="2511" x="992" y="351" pred="//@urndef/@specDiagrams.1/@connections.9">
+        <metadata name="_hits" value="0"/>
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint2530" id="2530" x="942" y="201" succ="//@urndef/@specDiagrams.1/@connections.18" pred="//@urndef/@specDiagrams.1/@connections.17"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="Internrt Failure" id="2531" x="992" y="201" pred="//@urndef/@specDiagrams.1/@connections.18">
+      <nodes xsi:type="ucm.map:EndPoint" name="Internet Failure" id="2531" x="992" y="201" pred="//@urndef/@specDiagrams.1/@connections.10">
+        <metadata name="_hits" value="0"/>
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
-      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef2065" id="2065" x="266" y="176" width="143" height="305" contDef="2064" nodes="2075 2056">
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef2065" id="2065" x="266" y="176" width="143" height="305" contDef="2064" nodes="2075">
         <label/>
       </contRefs>
-      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef2067" id="2067" x="516" y="167" width="138" height="321" contDef="2066" nodes="2077 2240">
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef2067" id="2067" x="516" y="167" width="138" height="321" contDef="2066" nodes="2077">
         <label/>
       </contRefs>
       <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef2069" id="2069" x="790" y="162" width="126" height="328" contDef="2068" nodes="2081 2491">
         <label/>
       </contRefs>
-      <connections xsi:type="ucm.map:NodeConnection" source="2055" target="2056"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="2056" target="2075"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="2055" target="2075"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2075" target="2077"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="2077" target="2240"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="2077" target="2407"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2081" target="2491"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="2240" target="2359"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="2359" target="2407"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2407" target="2081">
         <condition label="" expression="NotFetched" description=""/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2407" target="2408">
+      <connections xsi:type="ucm.map:NodeConnection" source="2407" target="2409">
         <condition label="" expression="Fetched" description=""/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2408" target="2409"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="2407" target="2437">
+      <connections xsi:type="ucm.map:NodeConnection" source="2407" target="2438">
         <condition label="" expression="true"/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2437" target="2438"/>
       <connections xsi:type="ucm.map:NodeConnection" source="2491" target="2057">
         <condition label="" expression="true"/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2491" target="2492">
+      <connections xsi:type="ucm.map:NodeConnection" source="2491" target="2493">
         <condition label="" expression="true"/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2492" target="2493"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="2491" target="2510">
+      <connections xsi:type="ucm.map:NodeConnection" source="2491" target="2511">
         <condition label="" expression="true"/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2510" target="2511"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="2491" target="2530">
+      <connections xsi:type="ucm.map:NodeConnection" source="2491" target="2531">
         <condition label="" expression="true"/>
       </connections>
-      <connections xsi:type="ucm.map:NodeConnection" source="2530" target="2531"/>
     </specDiagrams>
     <specDiagrams xsi:type="grl:GRLGraph" name="Eaton Center Marketing" id="380" description="Standard mode is better because it has the extra features of Recommendation and Events which helps promote more the Eaton Centre than the light mode which does not contain the extra features for marketing and helping the promotion of the Eaton Center&#xD;&#xA;">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef382" id="382" x="649" y="89" pred="//@urndef/@specDiagrams.2/@connections.0 //@urndef/@specDiagrams.2/@connections.1" def="381">
@@ -470,19 +471,19 @@
         <label deltaX="30" deltaY="-30"/>
       </connections>
       <connections xsi:type="grl:LinkRef" source="1836" target="386" link="1859">
-        <label deltaX="30" deltaY="-30"/>
+        <label deltaX="41" deltaY="-49"/>
       </connections>
       <connections xsi:type="grl:LinkRef" source="1155" target="386" link="1860">
-        <label deltaX="30" deltaY="-30"/>
+        <label deltaX="29" deltaY="-101"/>
       </connections>
       <connections xsi:type="grl:LinkRef" source="1642" target="386" link="1862">
         <label deltaX="30" deltaY="-30"/>
       </connections>
       <connections xsi:type="grl:LinkRef" source="904" target="390" link="1864">
-        <label deltaX="30" deltaY="-30"/>
+        <label deltaX="37" deltaY="-61"/>
       </connections>
       <connections xsi:type="grl:LinkRef" source="625" target="390" link="1866">
-        <label deltaX="30" deltaY="-30"/>
+        <label deltaX="25" deltaY="-76"/>
       </connections>
       <connections xsi:type="grl:LinkRef" source="1374" target="390" link="1867">
         <label deltaX="30" deltaY="-30"/>
